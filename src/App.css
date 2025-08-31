@@ -3,7 +3,6 @@
 }
 .spacer{
     display: block;
-    background: linear-gradient(45deg, #fcee59, #F6B231);
     width: 100%;
-    padding-top: var(--navbar-height);
+    margin-top: var(--navbar-height);
 }
