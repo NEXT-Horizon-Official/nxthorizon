@@ -16,9 +16,11 @@ useEffect(() =>{
     <>
       <Router>
         <Navbar setPageTitle={setPageTitle}/>
+        <div className="spacer">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        </div>
       </Router>
       </>
   )

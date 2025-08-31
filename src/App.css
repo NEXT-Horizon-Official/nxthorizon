@@ -1,3 +1,7 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.spacer{
+    display: block;
+    margin-top: var(--navbar-height);
+}

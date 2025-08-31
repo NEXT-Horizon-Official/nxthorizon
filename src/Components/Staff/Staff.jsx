@@ -1,6 +1,6 @@
 import './Staff.css';
 import wenhaoLuPicture from '../../assets/staff photos/wenhaolu.png';
-import StaffCards from '../StaffCards/StaffCards';
+import StaffCards from '../Staff-Cards/StaffCards';
 
 
 function Staff(){
@@ -10,7 +10,7 @@ function Staff(){
         <div className="staff-container">
             <h1>Meet our staff!</h1>
             <div className="staff-card-container">
-                <StaffCards image={wenhaoLuPicture} nameOf="Wenhao Lu" position="Founder" classOf="27" bio={wenhaoLuBio} />
+                <StaffCards image={wenhaoLuPicture} name="Wenhao Lu" position="Founder" classOf="27" bio={wenhaoLuBio} />
         </div>
     </div>
         </>
