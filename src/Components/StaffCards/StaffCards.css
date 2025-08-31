@@ -1,0 +1,52 @@
+.staff-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    height: 26rem;
+    width: 17rem;
+    box-shadow: 0 0 20px #00000069;
+    font-size: auto;
+    background: #fff;
+    padding: 0 1rem 1rem 1rem;
+    transition: transform 0.41s;
+}
+.staff-card:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.staff-card:active{
+    transform: scale(0.9);
+}
+.staff-card h1{
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1;
+}
+.staff-headshot-container{
+    margin-top: -6rem;
+}
+.staff-bio-container{
+    position: relative;
+    width: 17rem;
+    height: 14rem;
+    background: #eaeaea;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-radius: 24px 10px 10px 24px;
+}
+.staff-bio-container::-webkit-scrollbar{
+    width: 10px;
+}
+.staff-bio-container::-webkit-scrollbar-track{
+    background-color: #d4d2d2;
+    border-radius: 0 24px 24px 0;
+}
+.staff-bio-container::-webkit-scrollbar-thumb{
+    background: #bfbbbb;
+    border-radius: 8px;
+}
+.staff-bio-container p{
+    margin: 1rem;
+}

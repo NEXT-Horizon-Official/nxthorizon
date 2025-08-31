@@ -1,0 +1,19 @@
+.staff-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 655px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 8rem;
+    padding-bottom: 50px;
+}
+.staff-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}

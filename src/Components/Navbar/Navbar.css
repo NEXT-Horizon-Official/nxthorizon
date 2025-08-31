@@ -1,0 +1,71 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 105px;
+    padding: 0 7rem 0 7rem;
+    background: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: row;
+    z-index: 100;
+}
+.navbar-container::after{
+    content: '';
+    position: fixed;
+    top: 105px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(45deg, #fcee59, #F6B231);
+}
+.navbar-right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    text-align: center;
+}
+.navbar-right .navbar-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+.navbar-right .navbar-links a{
+    color: #192a80;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar-right .navbar-links a:hover{
+    cursor: pointer;
+}
+.navbar-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbar-title h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+     gap: 2px;
+}
+.navbar-title:hover{
+    cursor: pointer;
+}
+.navbar-title-emp-left{
+    display: inline-block;
+    color: #192a80;
+    text-transform: uppercase;
+}
+.navbar-title-emp-right{
+    display: inline-block;
+    color: #F6B231;
+}
