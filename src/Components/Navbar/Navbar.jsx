@@ -6,7 +6,7 @@ function Navbar( {setPageTitle} ){
         <>
             <div className="navbar-container">
                 <div className="navbar-left">
-                    <Link to="/" onClick={() => setPageTitle("Home")} className="navbar-title"><h1><span className="navbar-title-emp-left">next</span> <span className="navbar-title-emp-right">Horizons</span></h1></Link>
+                    <Link to="/" onClick={() => setPageTitle("Home")} className="navbar-title"><h1><span className="navbar-title-emp-left">next</span> <span className="navbar-title-emp-right">Horizon</span></h1></Link>
                 </div>
                 <div className="navbar-right">
                     <div className="navbar-links"> 

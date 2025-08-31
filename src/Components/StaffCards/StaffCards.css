@@ -26,6 +26,7 @@
 }
 .staff-headshot-container{
     margin-top: -6rem;
+    user-select: none;
 }
 .staff-bio-container{
     position: relative;
