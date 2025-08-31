@@ -4,7 +4,7 @@ import StaffCards from '../StaffCards/StaffCards';
 
 
 function Staff(){
-    const wenhaoLuBio = "Wenhao is a junior from New Jersey. He is a USAJMO qualifier, earning an Honorable Mention, and scored 11 on the AIME, and is also in the USACO Silver division. His favorite math subjects are combinatorics and algebra. Outside of math, he enjoys listening to Clairo, drinking iced strawberry matcha, and playing club baseball, and his club team reached a peak Perfect Game ranking of #75 nationally. You can find him on AoPS as lu1376091 or on Discord as welu28_.";
+    const wenhaoLuBio = "Wenhao is a junior from New Jersey. He is a USAJMO qualifier, earning an Honorable Mention, and scored 11 on the AIME. He is also in the USACO Silver division. His favorite math subjects are combinatorics and algebra. Outside of math, he enjoys listening to Clairo, drinking iced strawberry matcha, and playing club baseball, and his club team reached a peak Perfect Game ranking of #75 nationally. You can find him on AoPS as lu1376091 or on Discord as welu28_.";
     return(
         <>
         <div className="staff-container">
