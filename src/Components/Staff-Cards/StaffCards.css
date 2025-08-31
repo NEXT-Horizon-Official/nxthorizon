@@ -28,6 +28,10 @@
     margin-top: -6rem;
     user-select: none;
 }
+.staff-headshot-container img{
+    height: 12rem;
+    width: 12rem;
+}
 .staff-bio-container{
     position: relative;
     width: 17rem;
