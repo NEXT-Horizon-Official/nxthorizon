@@ -75,20 +75,22 @@
 .sidebar-toggle{
     color: var(--text-blue-primary);
     text-align: left;
-    position: fixed;
-    left: 6rem;
+    position: absolute;
+    left: 1rem;  
+    top: 50%;
+    transform: translateY(-50%);
     display: none;
     font-size: 20px;
 }
 .sidebar-wrapper{
-    position: fixed;
     z-index: 100;
+    position: fixed;
 }
 .sidebar-container{
     display: none;
     background-color: var(--bg-yellow-secondary);
-    width: 45vw;
-    height: 100vh;
+    width: 100vw;
+    height: 80vh;
     overflow-y: auto;
 }
 .Link{
