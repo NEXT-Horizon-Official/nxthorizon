@@ -11,6 +11,22 @@ function Navbar( {setPageTitle} ){
         setSidebarOpen(false);
     }
 
+    useEffect(() => {
+        document.body.style.overflow = sidebarIsOpen ? "hidden" : "auto";
+    }, [sidebarIsOpen]);
+
+    useEffect(() =>{
+        const handleResize = () => {
+            if(window.matchMedia("(max-width: 1100px)").matches){
+                setSidebarOpen(false);
+            }
+        }
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, [])
+
     const navLinks = [
         { path: "/about", title: "About"},
         { path: "/contact", title: "Contact"},
