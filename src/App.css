@@ -1,6 +1,14 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+:root{
+    --text-blue-primary: #192a80;
+    --text-yellow-primary: #F6B231;
+
+    --bg-blue-primary: #192a80;
+    --bg-yellow-primary: #F6B231;
+    --bg-yellow-secondary: #fcee59;
+}
 .spacer{
     display: block;
     width: 100%;
