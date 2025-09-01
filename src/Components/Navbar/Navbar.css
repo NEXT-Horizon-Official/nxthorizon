@@ -136,6 +136,11 @@
     }
 }
 @media(max-width: 575px){
+    .navbar-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .navbar-title{
         font-size: 15px;
     }
