@@ -88,9 +88,9 @@
 }
 .sidebar-container{
     display: none;
-    background-color: var(--bg-yellow-secondary);
+    background-color: rgb(242, 242, 242);
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     overflow-y: auto;
 }
 .Link{
@@ -99,18 +99,20 @@
 }
 .sidebar-links{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-direction: column;
+    height: 100vh;
+    gap: 2rem;
+    padding-top: 1rem;
 }
 .link-bars{
-    padding-left: 2rem;
     display: flex;
     align-items: center;
     width: 100vw;
-    height: 3rem;
+    padding: 0.25rem 0 0.25rem 2rem;
 }
 .link-bars:hover{
-    background: #f8ec64;
+    background: rgb(232, 231, 231);
 }
 .sidebar-open{
     display: flex;

@@ -42,8 +42,8 @@ function Navbar( {setPageTitle} ){
                     <div className={`sidebar-container ${sidebarIsOpen ? 'sidebar-open' : ''}`}>
                         <div className="sidebar-links">
                             {navLinks.map(({ path, title }) => (
-                                <Link key={title} className="Link" to={path} onClick={() => handleLinkClick(title)}>
-                                <p className="link-bars">{title}</p>
+                                <Link key={title} className="Link link-bars" to={path} onClick={() => handleLinkClick(title)}>
+                                <p>{title}</p>
                                 </Link>
                         ))}
                         </div>
