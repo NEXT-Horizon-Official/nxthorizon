@@ -1,4 +1,4 @@
-.staff-container{
+.staff-container-wrapper{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -6,7 +6,18 @@
     left: 0;
     right: 0;
     flex-direction: column;
-    gap: 8rem;
+    gap: 1rem;
+}
+.staff-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+.staff-container h1{
+    text-align: center;
 }
 .staff-card-container{
     display: flex;
