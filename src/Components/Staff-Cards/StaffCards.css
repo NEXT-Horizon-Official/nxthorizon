@@ -31,6 +31,7 @@
 .staff-headshot-container img{
     height: 12rem;
     width: 12rem;
+    border-radius: 50%;
 }
 .staff-bio-container{
     position: relative;

@@ -11,7 +11,8 @@
 .hero-logo-container img{
     display: block;
     user-select: none;
-
+    height: 25rem;
+    width: 25rem;
 }
 .mission-statement{
     font-size: 1.5rem;
@@ -25,5 +26,9 @@
 @media screen and (max-width: 1225px){
     .mission-statement{
         font-size: 1rem;
+    }
+    .hero-logo-container img{
+        height: 20rem;
+        width: 20rem;
     }
 }

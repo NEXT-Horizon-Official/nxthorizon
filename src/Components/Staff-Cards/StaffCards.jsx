@@ -1,6 +1,6 @@
 import "./StaffCards.css";
 
-function StaffCards({ image, name, position, classOf, bio}){
+function StaffCards({ image, name, position, classOf, bio }){
     return(
             <div className="staff-card" aria-label="Founder Jonathan Liu's bio">
                 <div className="staff-headshot-container">

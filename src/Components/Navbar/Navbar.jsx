@@ -41,6 +41,7 @@ function Navbar( {setPageTitle} ){
         <div className="sidebar-wrapper"> {/* mobile compatability*/}
                     <div className={`sidebar-container ${sidebarIsOpen ? 'sidebar-open' : ''}`}>
                         <div className="sidebar-links">
+                            <Link className='Link link-bars' to="/" onClick={() => setPageTitle("home")}><p>Home</p></Link>
                             {navLinks.map(({ path, title }) => (
                                 <Link key={title} className="Link link-bars" to={path} onClick={() => handleLinkClick(title)}>
                                 <p>{title}</p>
@@ -51,7 +52,7 @@ function Navbar( {setPageTitle} ){
                 </div>
 
             <div className="navbar-container">
-                <button onClick={handleSidebarToggle} className="sidebar-toggle">{sidebarIcon}</button>
+                <button onClick={handleSidebarToggle} className="sidebar-toggle">{sidebarIcon}</button> 
                 <div className="navbar-left">
                     <Link to="/" onClick={() => handleLinkClick(title)} className="navbar-title"><h1><span className="navbar-title-emp-left">next</span> <span className="navbar-title-emp-right">Horizon</span></h1></Link>
                 </div>
