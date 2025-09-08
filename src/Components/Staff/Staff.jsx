@@ -3,6 +3,7 @@ import wenhaoLuPicture from '../../assets/staff photos/wenhaolu.png';
 import jonathanLiuPicture from '../../assets/staff photos/jonathanliu.png';
 import davidZhangPicture from '../../assets/staff photos/davidzhang.png';
 import adithyaBalaukumarPicture from '../../assets/staff photos/adithyabalaukumar.png';
+import pietroLoraschiPicture from '../../assets/staff photos/pietroloraschi.png'
 import StaffCards from '../Staff-Cards/StaffCards';
 
 
@@ -29,6 +30,7 @@ function Staff(){
          <h1>Mentors</h1>
         <div className="staff-card-container">
             <StaffCards image={adithyaBalaukumarPicture} name="Adithya Balaukumar" position="Mentor" classOf="29" bio={bios[3]} />
+            <StaffCards image={pietroLoraschiPicture} name="Pietro Loraschi" position="Mentor" classOf="29" bio={bios[4]} />
         </div>
         </div>
 </div>
