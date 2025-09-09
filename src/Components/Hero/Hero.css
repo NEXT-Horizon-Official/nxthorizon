@@ -5,7 +5,8 @@
     flex-direction: row;
     background: linear-gradient(45deg, #fcee59, #F6B231);
     padding: 0 1rem 0 1rem;
-    min-width: 100vh;
+    min-width: 100%;
+    box-sizing: border-box;
     height: 30rem;
 }
 .hero-logo-container img{
@@ -23,12 +24,22 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 1225px){
+@media(max-width: 1225px){
     .mission-statement{
         font-size: 1rem;
     }
     .hero-logo-container img{
         height: 20rem;
         width: 20rem;
+    }
+}
+@media(max-width: 920px){
+    .hero-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .mission-statement{
+        text-align: center;
+        height: auto;
     }
 }
