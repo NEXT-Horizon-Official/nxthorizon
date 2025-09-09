@@ -41,7 +41,12 @@ function Navbar( {setPageTitle} ){
         <div className="sidebar-wrapper"> {/* mobile compatability*/}
                     <div className={`sidebar-container ${sidebarIsOpen ? 'sidebar-open' : ''}`}>
                         <div className="sidebar-links">
-                            <Link className='Link link-bars' to="/" onClick={() => setPageTitle("home")}><p>Home</p></Link>
+                            <Link className='Link link-bars' to="/" onClick={() => {
+                                setPageTitle("home"); 
+                                setSidebarOpen(false);
+                                }}>
+                                    <p>Home</p>
+                            </Link>
                             {navLinks.map(({ path, title }) => (
                                 <Link key={title} className="Link link-bars" to={path} onClick={() => handleLinkClick(title)}>
                                 <p>{title}</p>

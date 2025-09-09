@@ -90,7 +90,7 @@
     display: none;
     background-color: rgb(242, 242, 242);
     width: 100vw;
-    height: 100vh;
+    height: calc(100% - var(--navbar-height) - 6px);
     overflow-y: auto;
 }
 .Link{
@@ -101,7 +101,7 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - var(--navbar-height) - 6px);
     gap: 2rem;
     padding-top: 1rem;
 }
