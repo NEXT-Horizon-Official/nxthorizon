@@ -42,7 +42,7 @@ function Navbar( {setPageTitle} ){
                     <div className={`sidebar-container ${sidebarIsOpen ? 'sidebar-open' : ''}`}>
                         <div className="sidebar-links">
                             <Link className='Link link-bars' to="/" onClick={() => {
-                                setPageTitle("home"); 
+                                setPageTitle("Home"); 
                                 setSidebarOpen(false);
                                 }}>
                                     <p>Home</p>

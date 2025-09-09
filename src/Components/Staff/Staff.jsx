@@ -16,7 +16,7 @@ function Staff(){
     adithyaBalaukumar: "Adithya is a Freshman from New Jersey. He got a Bronze Medal in the Math League International Competition, Honor Roll on AMC 8, and an award in New Jersey Youth Symphony. Adithya also made it to the state level in robotics by winning the innovation award. In his free time, Adithya frequently visits local parks to enjoy scenic views and loves drinking matcha",
     pietroLoraschi: "Pietro is a freshman from New Jersey. He is a two-time top placer in the World Scholar’s Cup, earning recognition at the global level for excellence in debate, collaborative writing, and interdisciplinary knowledge. He also enjoys playing and performing guitar.",
     andrewZhao: "Andrew is a freshman from New Jersey. He enjoys coding and has experience in C++, Java, JavaScript, React, Vue, and Python. When he’s not coding, he likes to play basketball, listen to music, and go to cafes. This year, he aims to tackle more complex coding problems and explore machine learning."
-};
+}
     return(
         <>
         
