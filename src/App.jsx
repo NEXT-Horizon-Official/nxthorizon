@@ -2,27 +2,43 @@ import './App.css'
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
 
+function AppContent(){
+  const [pageTitle, setPageTitle] = useState("Home");
+  const location = useLocation();
+  useEffect(() =>{
+      const path = location.pathname.slice(1);
+      if (path === "") setPageTitle("Home");
+      else setPageTitle(path.charAt(0).toUpperCase() + path.slice(1));
+  }, [location])
+
+  useEffect(() =>{
+      document.title = "Next Horizon - " + pageTitle;
+
+      if(location.pathname === `/${pageTitle}`){
+        document.title = "Next Horizon - " + pageTitle;
+      }
+  }, [pageTitle])
+  return(
+    <>
+    <Navbar setPageTitle={setPageTitle}/>
+    <div className="spacer">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
+    </>
+  )
+}
 
 function App() {
-const [pageTitle, setPageTitle] = useState("Home");
-
-useEffect(() =>{
-    document.title = "Next Horizon - " + pageTitle;
-}, [pageTitle])
-
   return (
     <>
       <Router>
-        <Navbar setPageTitle={setPageTitle}/>
-        <div className="spacer">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        </div>
+        <AppContent />
       </Router>
-      </>
+    </>
   )
 }
 

@@ -64,7 +64,7 @@ function Navbar( {setPageTitle} ){
                 <div className="navbar-right">
                     <div className="navbar-links"> 
                     {navLinks.map(({path, title}) => (
-                        <Link key={title} className="Link" to={path} onClick={() => setPageTitle({title})}>
+                        <Link key={title} className="Link" to={path} onClick={() => setPageTitle(title)}>
                         <p>{title}</p>
                         </Link>
                     ))}
