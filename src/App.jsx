@@ -5,20 +5,20 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
 
 function AppContent(){
-  const [pageTitle, setPageTitle] = useState("Home");
+  const initialTitle = () => {
+    const path = window.location.pathname.slice(1);
+    if (path === "") return "Home";
+    return path.charAt(0).toUpperCase() + path.slice(1);
+  };
+  const [pageTitle, setPageTitle] = useState(initialTitle);
   const location = useLocation();
   useEffect(() =>{
       const path = location.pathname.slice(1);
       if (path === "") setPageTitle("Home");
       else setPageTitle(path.charAt(0).toUpperCase() + path.slice(1));
   }, [location])
-
   useEffect(() =>{
       document.title = "Next Horizon - " + pageTitle;
-
-      if(location.pathname === `/${pageTitle}`){
-        document.title = "Next Horizon - " + pageTitle;
-      }
   }, [pageTitle])
   return(
     <>
