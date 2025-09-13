@@ -12,7 +12,8 @@
     right: 0;
     height: var(--navbar-height);
     padding: 0 7rem 0 7rem;
-    background: white;
+    background: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(15px);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex-direction: row;
     z-index: 100;
