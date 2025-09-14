@@ -26,3 +26,19 @@
     font-weight: normal;
     width: 80%;
 }
+@media (max-width: 1100px){
+    .hero-text-primary{
+        font-size: 35px;
+    }
+    .hero-text-secondary{
+        font-size: 17.5px;
+    }
+}
+@media (max-width: 650px){
+    .hero-text-primary{
+        font-size: 30px;
+    }
+    .hero-text-secondary{
+        font-size: 15px;
+    }
+}
