@@ -1,6 +1,8 @@
 import './App.css'
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
+import Courses from './Pages/Courses/Courses';
+import Mission from './Pages/Mission/Mission'
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
 
@@ -26,6 +28,8 @@ function AppContent(){
     <div className="spacer">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/mission" element={<Mission />} />
+        <Route path="/courses" element={<Courses />} />
       </Routes>
     </div>
     </>

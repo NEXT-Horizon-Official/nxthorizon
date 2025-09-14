@@ -28,10 +28,9 @@ function Navbar( {setPageTitle} ){
     }, [])
 
     const navLinks = [
-        { path: "/missions", title: "Missions"},
+        { path: "/mission", title: "Mission"},
         { path: "/contact", title: "Contact"},
         { path: "/courses", title: "Courses"},
-        { path: "/donations", title: "Donations"},
     ]
 
     const sidebarIcon = sidebarIsOpen ? <FaTimes /> : <FaBars />;
@@ -52,6 +51,9 @@ function Navbar( {setPageTitle} ){
                                 <p>{title}</p>
                                 </Link>
                         ))}
+                        <Link className="Link link-bars" to="/donations" onClick={() => handleLinkClick(title)}>
+                                <p>Donations</p>
+                        </Link>
                         </div>
                     </div>
                 </div>
@@ -68,6 +70,9 @@ function Navbar( {setPageTitle} ){
                         <p>{title}</p>
                         </Link>
                     ))}
+                   <Link className="Link" to="/donations" onClick={() => setPageTitle(title)}>
+                    <button className="donation_btn">Donations</button>
+                    </Link>
                     </div>
                 </div>
             </div>

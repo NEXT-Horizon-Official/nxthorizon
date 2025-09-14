@@ -1,9 +1,10 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 :root{
-    --text-blue-primary: #192a80;
+    --text-blue-primary: #6366f1;
     --text-yellow-primary: #F6B231;
+    --text-black-primary: #252525;
 
     --bg-blue-primary: #192a80;
     --bg-yellow-primary: #F6B231;
@@ -13,4 +14,7 @@
     display: block;
     width: 100%;
     margin-top: var(--navbar-height);
+}
+.emp-text-blue{
+    color: var(--text-blue-primary);
 }

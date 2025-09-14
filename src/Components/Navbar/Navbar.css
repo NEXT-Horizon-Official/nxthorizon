@@ -1,5 +1,5 @@
 :root{
-    --navbar-height: 5.3rem;
+    --navbar-height: 5rem;
 }
 
 .navbar-container{
@@ -13,20 +13,11 @@
     height: var(--navbar-height);
     padding: 0 7rem 0 7rem;
     background: rgba(255, 255, 255, 0.67);
-    backdrop-filter: blur(15px);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    backdrop-filter: blur(15px) saturate(100%);
     flex-direction: row;
     z-index: 100;
 }
-.navbar-container::after{
-    content: '';
-    position: fixed;
-    top: var(--navbar-height);
-    left: 0;
-    height: 6px;
-    width: 100%;
-    background: linear-gradient(45deg, #fcee59, #F6B231);
-}
+
 .navbar-right{
     display: flex;
     justify-content: space-evenly;
@@ -42,11 +33,23 @@
     gap: 3rem;
 }
 .navbar-right .navbar-links p{
-    color: var(--text-blue-primary);
+    color: var(--text-black-primary);
     text-decoration: none;
     font-size: 18px;
 }
 .navbar-right .navbar-links p:hover{
+    cursor: pointer;
+}
+.navbar-right .navbar-links button{
+    border: none;
+    background-color: #6366f1;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 7px 10px 7px 10px;
+}
+.navbar-right .navbar-links button:hover{
     cursor: pointer;
 }
 .navbar-title{
@@ -66,12 +69,12 @@
 }
 .navbar-title-emp-left{
     display: inline-block;
-    color: var(--text-blue-primary);
+    color: var(--text-black-primary);
     text-transform: uppercase;
 }
 .navbar-title-emp-right{
     display: inline-block;
-    color: var(--text-yellow-primary);
+    color: #6366f1;
 }
 .sidebar-toggle{
     color: var(--text-blue-primary);

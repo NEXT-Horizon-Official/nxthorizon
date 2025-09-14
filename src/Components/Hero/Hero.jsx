@@ -4,14 +4,12 @@ import nextHorizonLogo from '../../assets/images/next-horizon-logo.png';
 function Hero(){
     return(
         <>
-        <div className='hero-container'>
-            <div className="hero-logo-container">
-                <img src={nextHorizonLogo}/>
+        <div className="hero-container">
+            <div className="hero-sub-one">
+                <h1 className="hero-text-primary">unlock your competetive <span className="emp-text-blue">coding</span> & <span className="emp-text-blue">math</span> potential</h1>
             </div>
-            <div className="hero-mission-statement-container">
-                <h1 className="mission-statement">
-                    Our goal is to inspire and equip underrepresented students to excel in mathematics and programming competitions, and to build confidence, skills, and pathways that extend far beyond competitions. By noting and addressing this representation deficit, we aim to open doors for students, giving them greater access and confidence to pursue research, higher education, and careers in STEM.
-                </h1>
+            <div className="hero-sub-two">
+                <h1 className="hero-text-secondary">Empowering and insipring the underrepresented to achieve their competetive coding and math goals, and as well as providing more oppurtunities in the field of STEM</h1>
             </div>
         </div>
         </>
