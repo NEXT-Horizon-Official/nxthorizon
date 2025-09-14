@@ -6,6 +6,8 @@
     text-align: center;
     color: var(--text-black-primary);
     height: calc(100vh - var(--navbar-height));
+    margin: 1rem;
+    padding: 1rem;
 }
 .hero-text-primary{
     text-transform: capitalize;
