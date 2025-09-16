@@ -6,7 +6,7 @@
     --text-yellow-primary: #F6B231;
     --text-black-primary: #252525;
 
-    --bg-blue-primary: #192a80;
+    --bg-blue-primary: #6366f1;
     --bg-yellow-primary: #F6B231;
     --bg-yellow-secondary: #fcee59;
 }
@@ -17,4 +17,16 @@
 }
 .emp-text-blue{
     color: var(--text-blue-primary);
+}
+button{
+    background: var(--bg-blue-primary);
+    color: white;
+    border: 0;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 7px 10px 7px 10px;
+}
+.Link:hover{
+    cursor: pointer;
 }

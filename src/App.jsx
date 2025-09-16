@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import Courses from './Pages/Courses/Courses';
 import Mission from './Pages/Mission/Mission'
+import ErrorPage from './Pages/Error/ErrorPage/ErrorPage';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
 
@@ -16,8 +17,16 @@ function AppContent(){
   const location = useLocation();
   useEffect(() =>{
       const path = location.pathname.slice(1);
-      if (path === "") setPageTitle("Home");
-      else setPageTitle(path.charAt(0).toUpperCase() + path.slice(1));
+      const validPaths = ["", "courses", "mission", "contact", "donations"]; 
+      if (path === "") {
+        setPageTitle("Home");
+      } 
+      else if (validPaths.includes(path)) {
+        setPageTitle(path.charAt(0).toUpperCase() + path.slice(1));
+      } 
+      else {
+        setPageTitle("Error 404 - Page Not Found");
+      }
   }, [location])
   useEffect(() =>{
       document.title = "Next Horizon - " + pageTitle;
@@ -30,6 +39,7 @@ function AppContent(){
         <Route path="/" element={<Home />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="*" element={<ErrorPage setPageTitle={setPageTitle}/>} />
       </Routes>
     </div>
     </>
