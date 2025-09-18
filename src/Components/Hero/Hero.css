@@ -41,10 +41,16 @@
 .hero-button-field button{
     width: 12rem;
 }
+.hero-start-button{
+    border: 1px solid var(--bg-blue-primary);
+}
 .hero-learn-more-button{
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #ececec;
-    color: var(--text-black-primary)
+    color: var(--text-black-primary);
+}
+.hero-learn-more-button:hover{
+    background: #ffffff;
 }
 @media (max-width: 1100px){
     .hero-text-primary{

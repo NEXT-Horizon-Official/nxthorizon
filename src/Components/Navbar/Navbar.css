@@ -45,12 +45,13 @@
     background-color: #6366f1;
     color: white;
     font-weight: 500;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 18px;
     padding: 7px 10px 7px 10px;
 }
 .navbar-right .navbar-links button:hover{
     cursor: pointer;
+    background-color: var(--bg-blue-accent);
 }
 .navbar-title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -85,6 +86,9 @@
     transform: translateY(-50%);
     display: none;
     font-size: 20px;
+}
+.sidebar-toggle:hover{
+    background: transparent;
 }
 .sidebar-wrapper{
     z-index: 100;
