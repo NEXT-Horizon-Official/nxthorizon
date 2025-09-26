@@ -29,7 +29,7 @@ function Navbar( {setPageTitle} ){
 
     const navLinks = [
         { path: "/mission", title: "Mission"},
-        { path: "/contact", title: "Contact"},
+        { path: "/staff", title: "Staff"},
         { path: "/courses", title: "Courses"},
     ]
 

@@ -2,7 +2,8 @@ import './App.css'
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import Courses from './Pages/Courses/Courses';
-import Mission from './Pages/Mission/Mission'
+import Mission from './Pages/Mission/Mission';
+import StaffPage from './Pages/StaffPage/Staff';
 import ErrorPage from './Pages/Error/ErrorPage/ErrorPage';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
@@ -17,7 +18,7 @@ function AppContent(){
   const location = useLocation();
   useEffect(() =>{
       const path = location.pathname.slice(1);
-      const validPaths = ["", "courses", "mission", "contact", "donations"]; 
+      const validPaths = ["", "courses", "mission", "staff", "donations"]; 
       if (path === "") {
         setPageTitle("Home");
       } 
@@ -39,6 +40,7 @@ function AppContent(){
         <Route path="/" element={<Home />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/staff" element={<StaffPage />} />
         <Route path="*" element={<ErrorPage setPageTitle={setPageTitle}/>} />
       </Routes>
     </div>

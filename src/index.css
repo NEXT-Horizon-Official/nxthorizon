@@ -3,3 +3,6 @@ html, body{
     padding: 0;
     background-color: rgb(242, 242, 242)
 }
+img{
+    user-select: none;
+}

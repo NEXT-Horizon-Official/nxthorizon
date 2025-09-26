@@ -23,15 +23,19 @@
 .staff-card-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--staff-card-width), 1fr));
-    justify-content: center;
     justify-items: center;     
     align-items: center;  
+    place-content: center;
     width: 100%;
 }
 @media (max-width: 1370px) {
     .staff-card-container{
         grid-template-columns: repeat(2, 1fr);
         gap: 12rem;
+    }
+    .staff-card-container.mentor:has(:only-child) {
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
 @media (max-width: 950px){
