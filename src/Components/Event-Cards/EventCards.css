@@ -5,11 +5,13 @@
 .event-card-container{
     display: flex;
     flex-direction: column;
-    height: var(--event-card-height);
+    width: min(100%, var(--event-card-width));
+    max-width: var(--event-card-width);
+    height: auto; 
+    min-height: var(--event-card-height);
     border-radius: 10px;
     gap: 1rem;
     padding: calc(1rem + 2px);
-    width: var(--event-card-width);
     border: 2px solid transparent;
     background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #37a6f6 , #ff6ec7 , #fff89a) border-box;
 }
