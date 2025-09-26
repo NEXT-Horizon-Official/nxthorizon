@@ -5,7 +5,7 @@
 .event-card-container{
     display: flex;
     flex-direction: column;
-    width: min(100%, var(--event-card-width));
+    width: min(90%, var(--event-card-width));
     max-width: var(--event-card-width);
     height: auto; 
     min-height: var(--event-card-height);
